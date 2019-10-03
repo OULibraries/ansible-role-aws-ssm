@@ -1,0 +1,7 @@
+---
+- name: Move seelog.xml.template to seelog.xml
+  copy:
+    src: /etc/amazon/ssm/seelog.xml.template
+    dest: /etc/amazon/ssm/seelog.xml
+    remote_src: yes
+

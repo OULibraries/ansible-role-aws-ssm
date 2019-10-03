@@ -1,0 +1,9 @@
+---
+
+- name: Install CentOS RPM 
+  yum:
+    name: "https://s3.amazonaws.com/ec2-downloads-windows/SSMAgent/latest/linux_{{ url }}/amazon-ssm-agent.rpm"
+    state: present
+
+- include_tasks: register.yml
+  when: aws_ssm_activation_code is defined and aws_ssm_activation_id is defined
