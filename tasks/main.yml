@@ -1,6 +1,6 @@
 ---
 # tasks file for ansible-role-aws-ssm
-- import_playbook: assets.yml     
-- import_playbook: register.yml
-- import_playbook: configure.yml
+- include: assets.yml     
+- include: register.yml
+- include: configure.yml
 
