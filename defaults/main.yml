@@ -1,6 +1,6 @@
 ---
 # defaults file for ansible-role-aws-ssm
-aws_ssm_activation_code: {{ aws_ssm_vault_activation_code }}
-aws_ssm_activation_id: {{ aws_ssm_vault_activation_id }}
+aws_ssm_activation_code: "{{ aws_ssm_vault_activation_code }}"
+aws_ssm_activation_id: "{{ aws_ssm_vault_activation_id }}"
 aws_ssm_ec2_region: us-east-1
 
