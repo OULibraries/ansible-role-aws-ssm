@@ -2,7 +2,7 @@
 
 - name: Install CentOS RPM 
   yum:
-    name: "https://s3.amazonaws.com/ec2-downloads-windows/SSMAgent/latest/linux_amd64/amazon-ssm-agent.rpm"
+    name: "https://s3.us-east-1.com/amazon-ssm-us-east-1/latest/linux_amd64/amazon-ssm-agent.rpm"
     state: present
 
 - include_tasks: register.yml
